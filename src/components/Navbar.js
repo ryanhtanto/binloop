@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const { t, language, changeLanguage } = useLanguage();
@@ -23,16 +24,16 @@ function Navbar() {
 
     const menus = [
         {
-            name: t.home,
-            link: "#home",
+            name: t.navbar.home,
+            link: "/",
         },
         {
-            name: t.about,
-            link: "#about",
+            name: t.navbar.sponsor,
+            link: "/sponsor",
         },
         {
-            name: t.contact,
-            link: "#contact",
+            name: t.navbar.participant,
+            link: "/participant",
         },
     ];
 
@@ -59,7 +60,7 @@ function Navbar() {
 
                     {/* Logo */}
                     <a
-                        href="#home"
+                        href="/"
                         className="
                             text-2xl
                             font-black
@@ -83,9 +84,9 @@ function Navbar() {
                     <div className="hidden md:flex items-center gap-10">
 
                         {menus.map((item) => (
-                            <a
+                            <Link
+                                to={item.link}
                                 key={item.name}
-                                href={item.link}
                                 className="
                                     relative
                                     text-white
@@ -105,7 +106,7 @@ function Navbar() {
                                 "
                             >
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
 
 
@@ -123,7 +124,7 @@ function Navbar() {
                                     transition
                                 "
                             >
-                                Result
+                                {t.navbar.result}
 
                                 <span className="group-hover:rotate-180 transition">
                                     ▼
@@ -157,7 +158,7 @@ function Navbar() {
                                     {results.map((year) => (
                                         <a
                                             key={year}
-                                            href={`/result/${year}`}
+                                            href={`https://www.sportsplits.com/races/binloop-ultra-${year}`}
                                             className="
                                                 block
                                                 px-5 py-3
@@ -261,9 +262,9 @@ function Navbar() {
                     >
 
                         {menus.map((item) => (
-                            <a
+                            <Link
+                                to={item.link}
                                 key={item.name}
-                                href={item.link}
                                 onClick={() => setIsOpen(false)}
                                 className="
                                     text-white
@@ -273,7 +274,7 @@ function Navbar() {
                                 "
                             >
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
 
 
@@ -296,7 +297,7 @@ function Navbar() {
                                 {results.map((year) => (
                                     <a
                                         key={year}
-                                        href={`/result/${year}`}
+                                        href={`https://www.sportsplits.com/races/binloop-ultra${year}`}
                                         className="text-white/70"
                                     >
                                         {year} Result

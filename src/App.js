@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import LoadingScreen from "./components/LoadingScreen";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
+import Participant from "./pages/participant";
+import Sponsors from "./components/Sponsors";
 
 function App() {
   useEffect(() => {
@@ -21,10 +24,24 @@ function App() {
           onComplete={() => setLoading(false)}
         />
       ) : (
-        <>
-        <Navbar />
-        <Home />
-        </>
+        <BrowserRouter>
+          <Navbar />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+
+            <Route
+              path="/participant"
+              element={<Participant />}
+            />
+
+            <Route
+              path="/sponsor"
+              element={<Sponsors />}
+            />
+          </Routes>
+
+        </BrowserRouter>
       )}
     </>
   );

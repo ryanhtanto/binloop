@@ -5,10 +5,12 @@ import RunningCategoryCard from "../components/RunningCategoryCard";
 import RunningCategoryDetail from "../components/RunningCategoryDetail";
 import DarkSection from "../components/section/DarkSection";
 import PinkSection from "../components/section/PinkComponent";
+import Sponsors from "../components/Sponsors";
 import Typography from "../components/typography/Typography";
 import { useLanguage } from "../context/LanguageContext";
 
 function Home() {
+    const { t } = useLanguage();
     return (
         <>
             <DarkSection>
@@ -62,6 +64,205 @@ function Home() {
                         </div>
                     </div>
                 </CountdownBanner>
+            </DarkSection>
+
+            <DarkSection>
+                <section className="relative overflow-hidden py-24 px-6">
+
+                    {/* Pink Glow Background */}
+                    <div
+                        className="
+                            absolute
+                            top-1/2
+                            left-1/2
+                            -translate-x-1/2
+                            -translate-y-1/2
+                            w-[700px]
+                            h-[700px]
+                            bg-[#d82370]/10
+                            blur-[200px]
+                            rounded-full
+                        "
+                    />
+
+                    <div className="relative max-w-7xl mx-auto">
+
+                        {/* Header */}
+                        <div className="mb-16">
+
+                            <p
+                                className="
+                                    text-[#d82370]
+                                    uppercase
+                                    tracking-[0.35em]
+                                    text-sm
+                                    font-bold
+                                    mb-4
+                                "
+                            >
+                                {t.aboutRace.label}
+                            </p>
+
+                            <Typography
+                                variant="display"
+                                color="white"
+                                className="uppercase"
+                            >
+                                THE BINLOOP
+                            </Typography>
+
+                            <Typography
+                                variant="display"
+                                color="pink"
+                                className="uppercase"
+                            >
+                                ULTRA X
+                            </Typography>
+
+                        </div>
+
+
+                        {/* Main Content */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+
+                            {/* Left Side - Story */}
+                            <div className="space-y-6">
+
+                                <Typography
+                                    variant="body"
+                                    color="white"
+                                    className="opacity-80"
+                                >
+                                    {t.aboutRace.desc1}
+                                </Typography>
+
+
+                                <Typography
+                                    variant="body"
+                                    color="white"
+                                    className="opacity-80"
+                                >
+                                    {t.aboutRace.desc2}
+                                </Typography>
+
+
+                                <Typography
+                                    variant="body"
+                                    color="white"
+                                    className="opacity-80"
+                                >
+                                    {t.aboutRace.desc3Before}{" "}
+
+                                    <span className="text-[#d82370] font-bold">
+                                        {t.aboutRace.desc3Highlight}
+                                    </span>{" "}
+
+                                    {t.aboutRace.desc3After}
+                                </Typography>
+
+
+                                <Typography
+                                    variant="body"
+                                    color="white"
+                                    className="opacity-80"
+                                >
+                                    {t.aboutRace.desc4}
+                                </Typography>
+
+                            </div>
+
+
+                            {/* Right Side - Highlight Cards */}
+                            <div className="grid grid-cols-2 gap-6">
+                                {/* 5 Categories */}
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-delay="100"
+                                    className="
+                                        rounded-2xl
+                                        p-8
+                                        bg-[#d82370]/10
+                                        border border-[#d82370]/40
+                                        backdrop-blur-sm
+                                        shadow-[0_0_30px_rgba(216,35,112,0.25)]
+                                    "
+                                >
+                                    <h3 className="text-5xl font-black text-[#d82370]">
+                                        5
+                                    </h3>
+
+                                    <p className="text-white uppercase tracking-[0.2em] mt-3">
+                                        {t.aboutRace.cards.categories}
+                                    </p>
+                                </div>
+
+
+                                {/* 2 Flyovers */}
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-delay="250"
+                                    className="
+                                        rounded-2xl
+                                        p-8
+                                        bg-white/5
+                                        border border-white/15
+                                    "
+                                >
+                                    <h3 className="text-5xl font-black text-white">
+                                        2
+                                    </h3>
+
+                                    <p className="text-white/70 uppercase tracking-[0.2em] mt-3">
+                                        {t.aboutRace.cards.flyovers}
+                                    </p>
+                                </div>
+
+
+                                {/* 12KM Loop */}
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-delay="400"
+                                    className="
+                                        rounded-2xl
+                                        p-8
+                                        bg-white/5
+                                        border border-white/15
+                                    "
+                                >
+                                    <h3 className="text-5xl font-black text-white">
+                                        12KM
+                                    </h3>
+
+                                    <p className="text-white/70 uppercase tracking-[0.2em] mt-3">
+                                        {t.aboutRace.cards.eachLoop}
+                                    </p>
+                                </div>
+
+
+                                {/* Location */}
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-delay="550"
+                                    className="
+                                        rounded-2xl
+                                        p-8
+                                        bg-white/5
+                                        border border-white/15
+                                    "
+                                >
+                                    <h3 className="text-3xl font-black text-white">
+                                        BINTARO
+                                    </h3>
+
+                                    <p className="text-white/70 uppercase tracking-[0.2em] mt-3">
+                                        {t.aboutRace.cards.location}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </DarkSection>
 
             <DarkSection>
@@ -158,6 +359,8 @@ function Home() {
                     />
                 </div>
             </DarkSection>
+
+            <Sponsors />
         </>
     );
 }

@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
 function Navbar() {
-    const { language, , t } = useLanguage();
+    const { t, language, changeLanguage } = useLanguage();
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [resultOpen, setResultOpen] = useState(false);
+
+    const results = [2025, 2024, 2023, 2022, 2021, 2020];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,9 +17,8 @@ function Navbar() {
 
         window.addEventListener("scroll", handleScroll);
 
-        return () => {
+        return () =>
             window.removeEventListener("scroll", handleScroll);
-        };
     }, []);
 
     const menus = [
@@ -35,8 +36,6 @@ function Navbar() {
         },
     ];
 
-    const results = [2025, 2024, 2023, 2022, 2021, 2020];
-
     return (
         <nav
             className={`
@@ -49,7 +48,7 @@ function Navbar() {
                             backdrop-blur-lg
                             shadow-[0_0_30px_rgba(216,35,112,0.25)]
                             py-4
-                          `
+                        `
                         : "bg-transparent py-6"
                 }
             `}
@@ -81,83 +80,68 @@ function Navbar() {
 
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex items-center gap-10">
+                    <div className="hidden md:flex items-center gap-10">
 
                         {menus.map((item) => (
-                            <li key={item.name}>
-                                <a
-                                    href={item.link}
-                                    className="
-                                        relative
-                                        text-white
-                                        uppercase
-                                        tracking-[0.15em]
-                                        text-sm
-                                        transition
-                                        hover:text-[#d82370]
-                                        after:absolute
-                                        after:left-0
-                                        after:-bottom-2
-                                        after:h-[2px]
-                                        after:w-0
-                                        after:bg-[#d82370]
-                                        after:transition-all
-                                        hover:after:w-full
-                                    "
-                                >
-                                    {item.name}
-                                </a>
-                            </li>
+                            <a
+                                key={item.name}
+                                href={item.link}
+                                className="
+                                    relative
+                                    text-white
+                                    text-sm
+                                    uppercase
+                                    tracking-[0.15em]
+                                    transition
+                                    hover:text-[#d82370]
+                                    after:absolute
+                                    after:left-0
+                                    after:-bottom-2
+                                    after:h-[2px]
+                                    after:w-0
+                                    after:bg-[#d82370]
+                                    after:transition-all
+                                    hover:after:w-full
+                                "
+                            >
+                                {item.name}
+                            </a>
                         ))}
 
 
                         {/* Result Dropdown */}
-                        <li className="relative group">
+                        <div className="relative group">
 
                             <button
                                 className="
                                     flex items-center gap-2
                                     text-white
+                                    text-sm
                                     uppercase
                                     tracking-[0.15em]
-                                    text-sm
-                                    transition
                                     hover:text-[#d82370]
+                                    transition
                                 "
                             >
                                 Result
 
-                                <span
-                                    className="
-                                        transition-transform
-                                        group-hover:rotate-180
-                                    "
-                                >
+                                <span className="group-hover:rotate-180 transition">
                                     ▼
                                 </span>
                             </button>
 
 
-                            {/* Hover bridge */}
-                            <div className="absolute top-full h-4 w-full" />
-
-
-                            {/* Dropdown */}
                             <div
                                 className="
                                     absolute
-                                    left-1/2
-                                    -translate-x-1/2
                                     top-full
-                                    mt-4
+                                    pt-4
                                     w-48
                                     opacity-0
                                     invisible
                                     group-hover:opacity-100
                                     group-hover:visible
                                     transition-all
-                                    duration-300
-                                    z-50
                                 "
                             >
                                 <div
@@ -167,7 +151,7 @@ function Navbar() {
                                         border border-[#d82370]/30
                                         rounded-xl
                                         overflow-hidden
-                                        shadow-[0_0_30px_rgba(216,35,112,0.3)]
+                                        shadow-[0_0_25px_rgba(216,35,112,0.3)]
                                     "
                                 >
                                     {results.map((year) => (
@@ -176,14 +160,12 @@ function Navbar() {
                                             href={`/result/${year}`}
                                             className="
                                                 block
-                                                px-6
-                                                py-3
+                                                px-5 py-3
                                                 text-white
                                                 text-sm
-                                                tracking-[0.15em]
-                                                transition
                                                 hover:bg-[#d82370]
                                                 hover:text-black
+                                                transition
                                             "
                                         >
                                             {year} Result
@@ -192,9 +174,51 @@ function Navbar() {
                                 </div>
                             </div>
 
-                        </li>
+                        </div>
 
-                    </ul>
+
+                        {/* Language Switch */}
+                        <div
+                            className="
+                                flex items-center
+                                bg-white/10
+                                border border-white/10
+                                rounded-full
+                                p-1
+                            "
+                        >
+                            <button
+                                onClick={() => changeLanguage("id")}
+                                className={`
+                                    px-3 py-1 rounded-full text-xs
+                                    uppercase transition
+                                    ${
+                                        language === "id"
+                                            ? "bg-[#d82370] text-black font-bold"
+                                            : "text-white"
+                                    }
+                                `}
+                            >
+                                ID
+                            </button>
+
+                            <button
+                                onClick={() => changeLanguage("en")}
+                                className={`
+                                    px-3 py-1 rounded-full text-xs
+                                    uppercase transition
+                                    ${
+                                        language === "en"
+                                            ? "bg-[#d82370] text-black font-bold"
+                                            : "text-white"
+                                    }
+                                `}
+                            >
+                                EN
+                            </button>
+                        </div>
+
+                    </div>
 
 
                     {/* Hamburger */}
@@ -204,8 +228,6 @@ function Navbar() {
                             md:hidden
                             text-white
                             text-3xl
-                            hover:text-[#d82370]
-                            transition
                         "
                     >
                         {isOpen ? "×" : "☰"}
@@ -221,20 +243,20 @@ function Navbar() {
                         transition-all duration-500
                         ${
                             isOpen
-                                ? "max-h-[600px] opacity-100 mt-6"
-                                : "max-h-0 opacity-0"
+                                ? "max-h-[600px] mt-5"
+                                : "max-h-0"
                         }
                     `}
                 >
 
                     <div
                         className="
-                            bg-[#242021]/90
+                            bg-[#242021]/95
                             backdrop-blur-lg
-                            border border-[#d82370]/20
                             rounded-2xl
+                            border border-[#d82370]/20
                             p-6
-                            flex flex-col gap-5
+                            flex flex-col gap-4
                         "
                     >
 
@@ -248,7 +270,6 @@ function Navbar() {
                                     uppercase
                                     tracking-[0.15em]
                                     hover:text-[#d82370]
-                                    transition
                                 "
                             >
                                 {item.name}
@@ -256,97 +277,61 @@ function Navbar() {
                         ))}
 
 
-                        {/* Mobile Result Dropdown */}
+                        {/* Mobile Result */}
                         <button
                             onClick={() => setResultOpen(!resultOpen)}
                             className="
-                                flex justify-between
-                                items-center
+                                text-left
                                 text-white
                                 uppercase
                                 tracking-[0.15em]
-                                hover:text-[#d82370]
-                                transition
                             "
                         >
-                            Result
-
-                            <span
-                                className={`
-                                    transition-transform
-                                    ${resultOpen ? "rotate-180" : ""}
-                                `}
-                            >
-                                ▼
-                            </span>
+                            Result {resultOpen ? "▲" : "▼"}
                         </button>
 
-
-                        <div
-                            className={`
-                                overflow-hidden
-                                transition-all duration-300
-                                ${
-                                    resultOpen
-                                        ? "max-h-60"
-                                        : "max-h-0"
-                                }
-                            `}
-                        >
-                            <div className="pl-4 mt-3 flex flex-col gap-3">
-
+                        {
+                            resultOpen &&
+                            <div className="ml-4 flex flex-col gap-3">
                                 {results.map((year) => (
                                     <a
                                         key={year}
                                         href={`/result/${year}`}
-                                        className="
-                                            text-white/70
-                                            hover:text-[#d82370]
-                                            transition
-                                        "
+                                        className="text-white/70"
                                     >
                                         {year} Result
                                     </a>
                                 ))}
-
                             </div>
-                        </div>
+                        }
 
-                        {/* Language Switch */}
-                        <div className="flex items-center gap-2 ml-4">
+
+                        {/* Mobile Language */}
+                        <div className="flex gap-3 pt-3">
 
                             <button
-                                onClick={() => setLanguage("id")}
+                                onClick={() => changeLanguage("id")}
                                 className={`
-                                    text-sm
-                                    uppercase
-                                    tracking-[0.15em]
-                                    transition
+                                    px-4 py-2 rounded-full text-sm
                                     ${
                                         language === "id"
-                                            ? "text-[#d82370]"
-                                            : "text-white hover:text-[#d82370]"
+                                            ? "bg-[#d82370] text-black"
+                                            : "bg-white/10 text-white"
                                     }
                                 `}
                             >
                                 ID
                             </button>
 
-                            <span className="text-white/40">
-                                |
-                            </span>
 
                             <button
-                                onClick={() => setLanguage("en")}
+                                onClick={() => changeLanguage("en")}
                                 className={`
-                                    text-sm
-                                    uppercase
-                                    tracking-[0.15em]
-                                    transition
+                                    px-4 py-2 rounded-full text-sm
                                     ${
                                         language === "en"
-                                            ? "text-[#d82370]"
-                                            : "text-white hover:text-[#d82370]"
+                                            ? "bg-[#d82370] text-black"
+                                            : "bg-white/10 text-white"
                                     }
                                 `}
                             >
@@ -354,6 +339,7 @@ function Navbar() {
                             </button>
 
                         </div>
+
                     </div>
 
                 </div>

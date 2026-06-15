@@ -31,14 +31,12 @@ export const LanguageProvider = ({ children }) => {
         [language]
     );
 
-    
     return (
         <LanguageContext.Provider value={value}>
             {children}
         </LanguageContext.Provider>
     );
 };
-
 
 export const useLanguage = () => {
     const context = useContext(LanguageContext);

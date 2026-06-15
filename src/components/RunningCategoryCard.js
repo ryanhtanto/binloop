@@ -5,27 +5,27 @@ function RunningCategoryCard() {
     const categories = [
         {
             title: "200K",
-            image: "/images/200k.jpg",
+            image: "/images-2/run1.jpg",
         },
         {
             title: "120K",
-            image: "/images/120k.jpg",
+            image: "/images-2/run2.jpg",
         },
         {
             title: "60K",
-            image: "/images/60k.jpg",
+            image: "/images-2/run3.jpg",
         },
         {
             title: "XTRA MILE",
-            image: "/images/xtra-mile.jpg",
+            image: "/images-2/run4.jpg",
         },
         {
             title: "12K",
-            image: "/images/12k.jpg",
+            image: "/images-2/run5.jpg",
         },
         {
             title: "RELAY",
-            image: "/images/relay.jpg",
+            image: "/images-2/run6.jpg",
         },
     ];
 
@@ -76,8 +76,6 @@ function RunningCategoryCard() {
                     `}
                     style={{
                         backgroundImage: `url(${categories[current].image})`,
-                        filter: "blur(5px)",
-                        transform: fade ? "scale(1.1)" : "scale(1.15)",
                     }}
                 />
                 {/* Overlay */}
@@ -92,27 +90,6 @@ function RunningCategoryCard() {
                     >
                         {categories[current].title}
                     </Typography>
-
-                    <button
-                        className="
-                            bg-[#d82370]
-                            text-[#242021]
-                            font-bold
-                            uppercase
-                            tracking-[0.15em]
-                            px-6
-                            py-3
-                            rounded-full
-                            w-fit
-                            transition-all
-                            duration-300
-                            hover:bg-white
-                            hover:scale-105
-                            active:scale-95
-                        "
-                    >
-                        REGISTER HERE
-                    </button>
                 </div>
             </div>
 

@@ -5,7 +5,7 @@ function Typography({
     className = "",
 }) {
     const variants = {
-        display: "text-6xl md:text-8xl font-black leading-none",
+        display: "text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black leading-none",
         h1: "text-5xl md:text-7xl font-bold leading-tight",
         h2: "text-4xl md:text-6xl font-bold leading-tight",
         h3: "text-3xl md:text-4xl font-semibold leading-snug",

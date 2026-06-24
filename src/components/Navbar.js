@@ -8,8 +8,40 @@ function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [resultOpen, setResultOpen] = useState(false);
+    const [participantOpen, setParticipantOpen] = useState(false);
 
-    const results = [2025, 2024, 2023, 2022, 2021, 2020];
+    const results = [2026, 2025, 2024, 2023, 2022, 2021, 2020];
+
+    const runners = [ 
+        {
+            name : "Login", 
+            path: 'https://sportplus.mayar.link/'
+        },
+        {
+            name : "Runner Entitlement",
+            path: '/runner-entitlement'
+        },
+        {
+            name : "Rules & Regulation",
+            path: '/rules'
+        },
+        {
+            name : "Waiver",
+            path: '/waiver'
+        },
+        {
+            name : "Race Pack Collection",
+            path: '/rpc'
+        },
+        {
+            name : "Loop Guide",
+            path: '/loop-guide'
+        },
+        {
+            name : "Participant",
+            path: '/participant'
+        },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,10 +62,6 @@ function Navbar() {
         {
             name: t.navbar.sponsor,
             link: "/sponsor",
-        },
-        {
-            name: t.navbar.participant,
-            link: "/participant",
         },
     ];
 
@@ -70,15 +98,16 @@ function Navbar() {
                             hover:scale-105
                         "
                     >
-                        <span className="text-[#d82370]">
-                            Binloop
-                        </span>
-
-                        <span className="text-white">
-                            Ultra X
-                        </span>
+                         <img
+                                src="/new/binloopLogo.png"
+                                alt="Binloop Ultra X"
+                                className="
+                                    h-12
+                                    w-auto
+                                    object-contain
+                                "
+                            />
                     </a>
-
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center gap-10">
@@ -109,6 +138,71 @@ function Navbar() {
                             </Link>
                         ))}
 
+                        <div className="relative group">
+
+                            <button
+                                className="
+                                    flex items-center gap-2
+                                    text-white
+                                    text-sm
+                                    uppercase
+                                    tracking-[0.15em]
+                                    hover:text-[#d82370]
+                                    transition
+                                "
+                            >
+                                {t.navbar.participant}
+
+                                <span className="group-hover:rotate-180 transition">
+                                    ▼
+                                </span>
+                            </button>
+
+
+                            <div
+                                className="
+                                    absolute
+                                    top-full
+                                    pt-4
+                                    w-48
+                                    opacity-0
+                                    invisible
+                                    group-hover:opacity-100
+                                    group-hover:visible
+                                    transition-all
+                                "
+                            >
+                                <div
+                                    className="
+                                        bg-[#242021]/95
+                                        backdrop-blur-lg
+                                        border border-[#d82370]/30
+                                        rounded-xl
+                                        overflow-hidden
+                                        shadow-[0_0_25px_rgba(216,35,112,0.3)]
+                                    "
+                                >
+                                    {runners.map((runner) => (
+                                        <a
+                                            key={runner.name}
+                                            href={runner.path}
+                                            className="
+                                                block
+                                                px-5 py-3
+                                                text-white
+                                                text-sm
+                                                hover:bg-[#d82370]
+                                                hover:text-black
+                                                transition
+                                            "
+                                        >
+                                            {runner.name} 
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+
+                        </div>
 
                         {/* Result Dropdown */}
                         <div className="relative group">
@@ -221,7 +315,6 @@ function Navbar() {
 
                     </div>
 
-
                     {/* Hamburger */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -235,7 +328,6 @@ function Navbar() {
                     </button>
 
                 </div>
-
 
                 {/* Mobile Menu */}
                 <div
@@ -277,6 +369,32 @@ function Navbar() {
                             </Link>
                         ))}
 
+                        <button
+                            onClick={() => setParticipantOpen(!participantOpen)}
+                            className="
+                                text-left
+                                text-white
+                                uppercase
+                                tracking-[0.15em]
+                            "
+                        >
+                            {t.navbar.participant} {participantOpen ? "▲" : "▼"}
+                        </button>
+
+                        {
+                            participantOpen &&
+                            <div className="ml-4 flex flex-col gap-3">
+                                {runners.map((runner) => (
+                                    <a
+                                        key={runner.name}
+                                        href={runner.path}
+                                        className="text-white/70"
+                                    >
+                                        {runner.name}
+                                    </a>
+                                ))}
+                            </div>
+                        }
 
                         {/* Mobile Result */}
                         <button
@@ -288,7 +406,7 @@ function Navbar() {
                                 tracking-[0.15em]
                             "
                         >
-                            Result {resultOpen ? "▲" : "▼"}
+                            {t.navbar.result} {resultOpen ? "▲" : "▼"}
                         </button>
 
                         {

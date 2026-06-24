@@ -3,20 +3,20 @@ import DarkSection from "./section/DarkSection";
 function Sponsors() {
 
     const sponsors = [
-        "/sponsored/sponsored1.png",
+        // "/sponsored/sponsored1.png",
         "/sponsored/sponsored2.png",
         "/sponsored/sponsored3.png",
         "/sponsored/sponsored4.png",
-        "/sponsored/sponsored5.png",
+        // "/sponsored/sponsored5.png",
     ];
 
 
     const supports = [
-        "/support/support1.png",
-        "/support/support2.png",
+        // "/support/support1.png",
+        // "/support/support2.png",
         "/support/support3.png",
-        "/support/support4.png",
-        "/support/support5.png",
+        // "/support/support4.png",
+        // "/support/support5.png",
     ];
 
 
@@ -176,14 +176,14 @@ function Sponsors() {
                     <div className="space-y-14">
 
                         <LogoGrid
-                            title="Sponsors"
+                            title="Supported By"
                             logos={sponsors}
                             delay={100}
                         />
 
 
                         <LogoGrid
-                            title="Supported By"
+                            title="Sponsors"
                             logos={supports}
                             delay={200}
                         />

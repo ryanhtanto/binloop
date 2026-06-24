@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Participant from "./pages/participant";
 import Sponsors from "./components/Sponsors";
+import Footer from "./components/footer";
 
 function App() {
   useEffect(() => {
@@ -40,7 +41,8 @@ function App() {
               element={<Sponsors />}
             />
           </Routes>
-
+          
+          <Footer />
         </BrowserRouter>
       )}
     </>

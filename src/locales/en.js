@@ -2,7 +2,7 @@ const en = {
     navbar: {
         home: "Home",
         sponsor: "Sponsors",
-        participant: "Participant",
+        participant: "Runners",
         result: "Result",
     },
 
@@ -32,6 +32,59 @@ const en = {
             location: "South Tangerang",
         },
     },
+    raceInfo: {
+        label: "Race Information",
+        title: "READY FOR THE CHALLENGE?",
+
+        subtitle:
+            "Everything you need to know before joining Binloop Ultra X.",
+
+        included: {
+            title: "WHAT'S INCLUDED",
+
+            raceTeeTitle: "Race Tee",
+            raceTeeDesc:
+                "Provided for all registered participants.",
+
+            medalTitle: "Finisher Medal",
+            medalDesc:
+                "Awarded to all finishers under Cut Off Time (COT).",
+
+            finisherTeeTitle: "Exclusive Finisher Tee",
+            finisherTeeDesc:
+                "Available for 200K, 120K and 60K finishers under COT.",
+        },
+
+        qualification: {
+            title: "QUALIFICATION",
+
+            categories: [
+                {
+                    cat: "200K",
+                    req: "At least 100K Road or Ultra Trail Finisher in a previous race",
+                },
+                {
+                    cat: "120K",
+                    req: "At least 60K Road or FM Trail Finisher in a previous race",
+                },
+                {
+                    cat: "60K",
+                    req: "At least FM Road Finisher in a previous race",
+                },
+                {
+                    cat: "12K",
+                    req: "At least completed a 5K race",
+                },
+            ],
+
+            allCategories: "All Categories",
+            minAge: "Minimum Age: 18 Years Old",
+        },
+    },
+    participant: {
+        label: 'List Participant'
+    },
+    comingSoon: 'Coming Soon'
 };
 
 export default en;

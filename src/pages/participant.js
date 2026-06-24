@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
+import Typography from "../components/typography/Typography";
+import { useLanguage } from "../context/LanguageContext";
 
 function Participant() {
     const [participants, setParticipants] = useState([]);
     const [search, setSearch] = useState("");
+    const { t } = useLanguage();
 
     useEffect(() => {
         const loadExcel = async () => {
@@ -48,16 +51,9 @@ function Participant() {
 
             <div className="max-w-6xl mx-auto">
 
-                <h1
-                    className="
-                        text-5xl 
-                        font-black 
-                        uppercase 
-                        mb-8
-                    "
-                >
-                    Participants
-                </h1>
+                <Typography variant="h2" color="white" className="text-center uppercase mb-4 bold">
+                    {t.participant.label}
+                </Typography>
 
 
                 {/* Search */}
@@ -68,7 +64,6 @@ function Participant() {
                     onChange={(e) => setSearch(e.target.value)}
                     className="
                         w-full
-                        md:w-96
                         mb-8
                         px-5
                         py-3
@@ -80,9 +75,20 @@ function Participant() {
                     "
                 />
 
+                <h3
+                    className="
+                        text-2xl 
+                        font-black 
+                        uppercase 
+                        mb-8
+                        text-center
+                    "
+                >
+                    {t.comingSoon}
+                </h3>
 
                 {/* Table */}
-                <div className="overflow-x-auto rounded-2xl border border-white/10">
+                {/* <div className="overflow-x-auto rounded-2xl border border-white/10">
 
                     <table className="w-full">
 
@@ -143,7 +149,7 @@ function Participant() {
 
                     </table>
 
-                </div>
+                </div> */}
 
             </div>
 

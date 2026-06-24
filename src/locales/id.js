@@ -23,7 +23,7 @@ const id = {
             "yang terletak di Bintaro Jaya, Tangerang Selatan, di mana satu putaran memiliki jarak sekitar 12 kilometer.",
 
         desc4:
-            "Binloop dikenal sebagai salah satu tempat latihan favorit bagi pelari dan pesepeda, dengan rute yang nyaman dan aman sepanjang Jalan Bintaro Boulevard yang melewati Bintaro Xchange, flyover, Kebayoran Square, Discovery, dan Graha Raya.",
+            "Binloop dikenal sebagai salah satu tempat latihan favorit bagi pelari dan pesepeda, dengan rute yang nyaman dan aman sepanjang Jalan Bintaro Boulevard yang melewati Kebayoran Square, Flyover Jombang, Fresh Market, Graha Raya, Driving Range, Flyover Permata, Bintaro XChange, CBD Bintaro Jaya",
 
         cards: {
             categories: "Kategori",

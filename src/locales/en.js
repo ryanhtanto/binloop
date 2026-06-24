@@ -23,7 +23,7 @@ const en = {
             "located in Bintaro Jaya, South Tangerang, where one complete loop covers approximately 12 kilometers.",
 
         desc4:
-            "Binloop is a well-known training ground among runners and cyclists, offering a comfortable and safe route along Bintaro Boulevard, passing landmarks such as Bintaro Xchange, flyovers, Kebayoran Square, Discovery, and Graha Raya.",
+            "Binloop is a well-known training ground among runners and cyclists, offering a comfortable and safe route passing through Kebayoran Square, Jombang Flyover, Fresh Market, Graha Raya, Driving Range, Permata Flyover, Bintaro XChange, and CBD Bintaro Jaya.",
 
         cards: {
             categories: "Categories",

@@ -52,7 +52,7 @@ const id = {
 
             finisherTeeTitle: "Finisher Tee Eksklusif",
             finisherTeeDesc:
-                "Diberikan kepada finisher kategori 200K, 120K, dan 60K yang berhasil menyelesaikan lomba di bawah COT.",
+                "Diberikan kepada finisher kategori The Xtra Mile, 200K, 120K, dan 60K yang berhasil menyelesaikan lomba di bawah COT.",
         },
 
         qualification: {
@@ -83,8 +83,44 @@ const id = {
     },
     participant: {
         label: 'Daftar Peserta'
-    }, 
-    comingSoon: 'Segera'
+    },
+    comingSoon: 'Segera',
+    pricing: {
+        earlyBird: "Early Bird",
+        normal: "Normal",
+        regular: "Reguler",
+        loyalty: "Loyalty",
+        community: "Komunitas",
+        team: "Tim",
+        minRunner: "Minimal 5 pelari",
+    },
+
+    category: {
+        xtra: {
+            description: "Jumat malam, 7 Mei 2027, pukul 20.00 WIB",
+            earlyBirdDate: "1–7 Juli 2026",
+        },
+        k200: {
+            description: "Jumat malam, 7 Mei 2027, pukul 20.00 WIB",
+            earlyBirdDate: "1–7 Juli 2026 (atau hingga kuota terpenuhi)",
+        },
+        k120: {
+            description: "Sabtu siang, 8 Mei 2027, pukul 14.00 WIB",
+            earlyBirdDate: "1–7 Juli 2026 (atau hingga kuota terpenuhi)",
+        },
+        k60: {
+            description: "Sabtu siang, 8 Mei 2027, pukul 14.00 WIB",
+            earlyBirdDate: "1–7 Juli 2026 (atau hingga kuota terpenuhi)",
+        },
+        k12: {
+            description: "Sabtu, 8 Mei 2027, pukul 14.30 atau 20.00, atau Minggu, 9 Mei 2027, pukul 06.30 WIB",
+            earlyBirdDate: "1–7 Juli 2026 (atau hingga kuota terpenuhi)",
+        },
+        relay: {
+            description: "Sabtu siang, 8 Mei 2027, pukul 14.30 WIB. Minimal 1 pelari wanita. 5 × 1 loop.",
+            earlyBirdDate: "1–7 Juli 2026 (atau hingga kuota terpenuhi)",
+        },
+    },
 };
 
 export default id;

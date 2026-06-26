@@ -52,7 +52,7 @@ const en = {
 
             finisherTeeTitle: "Exclusive Finisher Tee",
             finisherTeeDesc:
-                "Available for 200K, 120K and 60K finishers under COT.",
+                "Available for The Xtra Mile, 200K, 120K and 60K finishers under COT.",
         },
 
         qualification: {
@@ -84,7 +84,43 @@ const en = {
     participant: {
         label: 'List Participant'
     },
-    comingSoon: 'Coming Soon'
+    comingSoon: 'Coming Soon',
+    pricing: {
+        earlyBird: "Early Bird",
+        normal: "Normal",
+        regular: "Regular",
+        loyalty: "Loyalty",
+        community: "Community",
+        team: "Team",
+        minRunner: "Min. 5 runners",
+    },
+
+    category: {
+        xtra: {
+            description: "Friday Night, 7 May 2027, 20:00 WIB",
+            earlyBirdDate: "1–7 July 2026",
+        },
+        k200: {
+            description: "Friday Night, 7 May 2027, 20:00 WIB",
+            earlyBirdDate: "1–7 July 2026 (or until quota is full)",
+        },
+        k120: {
+            description: "Saturday Afternoon, 8 May 2027, 14:00 WIB",
+            earlyBirdDate: "1–7 July 2026 (or until quota is full)",
+        },
+        k60: {
+            description: "Saturday Afternoon, 8 May 2027, 14:00 WIB",
+            earlyBirdDate: "1–7 July 2026 (or until quota is full)",
+        },
+        k12: {
+            description: "Saturday, 8 May 2027 at 14:30 or 20:00, or Sunday, 9 May 2027 at 06:30 WIB",
+            earlyBirdDate: "1–7 July 2026 (or until quota is full)",
+        },
+        relay: {
+            description: "Saturday Afternoon, 8 May 2027, 14:30 WIB. Minimum 1 female runner. 5 × 1 loop.",
+            earlyBirdDate: "1–7 July 2026 (or until quota is full)",
+        },
+    },
 };
 
 export default en;

@@ -225,111 +225,141 @@ function Home() {
                     <RunningCategoryDetail
                         image="/images-2/run4.jpg"
                         category="XTRA MILE"
-                        description="Friday Night, 7 May 2027, 20:00 WIB"
-                        loops="14+"
                         categoryLogo="/new/xtra.png"
+                        description={t.category.xtra.description}
+                        loops="14+"
                         cutOff="40H"
-                        earlyBirdDate="1-7 July 2026"
+                        earlyBirdDate={t.category.xtra.earlyBirdDate}
                         earlyBirdLink="https://register.binloopultra.com/200k-early"
                         normalLink="https://register.binloopultra.com/200k-normal"
                         pricing={{
                             earlyBird: [
                                 {
-                                    label: "Regular",
+                                    label: t.pricing.regular,
                                     price: "Rp 1.250K",
                                 },
                                 {
-                                    label: "Loyalty",
+                                    label: t.pricing.loyalty,
                                     price: "Rp 1.100K",
                                     highlight: true,
                                 },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 1.100K",
                                     highlight: true,
                                 },
                             ],
                             normal: [
                                 {
-                                    label: "Regular",
+                                    label: t.pricing.regular,
                                     price: "Rp 1.500K",
                                 },
                                 {
-                                    label: "Loyalty",
+                                    label: t.pricing.loyalty,
                                     price: "Rp 1.200K",
                                     highlight: true,
                                 },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 1.250K",
                                     highlight: true,
                                 },
                             ],
                         }}
-                        reverse={true}
+                        reverse
                     />
+
                     <RunningCategoryDetail
                         image="/images-2/run2.jpg"
                         category="200K"
                         categoryLogo="/new/duaratus.png"
-                        description="Friday Night, 7 May 2027, 20:00 WIB"
+                        description={t.category.k200.description}
                         loops="16"
                         cutOff="40H"
-                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdDate={t.category.k200.earlyBirdDate}
                         earlyBirdLink="https://register.binloopultra.com/200k-early"
                         normalLink="https://register.binloopultra.com/200k-normal"
                         pricing={{
                             earlyBird: [
-                                { label: "Regular", price: "Rp 1.250.000" },
-                                { label: "Loyalty", price: "Rp 1.100.000", highlight: true },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.regular,
+                                    price: "Rp 1.250.000",
+                                },
+                                {
+                                    label: t.pricing.loyalty,
+                                    price: "Rp 1.100.000",
+                                    highlight: true,
+                                },
+                                {
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 1.100.000",
                                     highlight: true,
                                 },
                             ],
                             normal: [
-                                { label: "Regular", price: "Rp 1.500.000" },
-                                { label: "Loyalty", price: "Rp 1.200.000", highlight: true },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.regular,
+                                    price: "Rp 1.500.000",
+                                },
+                                {
+                                    label: t.pricing.loyalty,
+                                    price: "Rp 1.200.000",
+                                    highlight: true,
+                                },
+                                {
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 1.250.000",
                                     highlight: true,
                                 },
                             ],
                         }}
                     />
+
                     <RunningCategoryDetail
                         image="/images-2/run1.jpg"
                         category="120K"
                         categoryLogo="/new/120k.png"
-                        description="Saturday Afternoon, 8 May 2027, 14:00 WIB"
+                        description={t.category.k120.description}
                         loops="15"
                         cutOff="22H"
-                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdDate={t.category.k120.earlyBirdDate}
                         earlyBirdLink="https://register.binloopultra.com/120k-early"
                         normalLink="https://register.binloopultra.com/120k-normal"
                         pricing={{
                             earlyBird: [
-                                { label: "Regular", price: "Rp 1.000.000" },
-                                { label: "Loyalty", price: "Rp 900.000", highlight: true },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.regular,
+                                    price: "Rp 1.000.000",
+                                },
+                                {
+                                    label: t.pricing.loyalty,
+                                    price: "Rp 900.000",
+                                    highlight: true,
+                                },
+                                {
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 900.000",
                                     highlight: true,
                                 },
                             ],
                             normal: [
-                                { label: "Regular", price: "Rp 1.250.000" },
-                                { label: "Loyalty", price: "Rp 1.000.000", highlight: true },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.regular,
+                                    price: "Rp 1.250.000",
+                                },
+                                {
+                                    label: t.pricing.loyalty,
+                                    price: "Rp 1.000.000",
+                                    highlight: true,
+                                },
+                                {
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 1.050.000",
                                     highlight: true,
                                 },
@@ -337,74 +367,103 @@ function Home() {
                         }}
                         reverse
                     />
+
                     <RunningCategoryDetail
                         image="/images-2/run3.jpg"
                         category="60K"
                         categoryLogo="/new/60k.png"
-                        description="Saturday Afternoon, 8 May 2027, 14:00 WIB"
+                        description={t.category.k60.description}
                         loops="5"
                         cutOff="10H"
-                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdDate={t.category.k60.earlyBirdDate}
                         earlyBirdLink="https://register.binloopultra.com/60k-early"
                         normalLink="https://register.binloopultra.com/60k-normal"
                         pricing={{
                             earlyBird: [
-                                { label: "Regular", price: "Rp 800.000" },
-                                { label: "Loyalty", price: "Rp 725.000", highlight: true },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.regular,
+                                    price: "Rp 800.000",
+                                },
+                                {
+                                    label: t.pricing.loyalty,
+                                    price: "Rp 725.000",
+                                    highlight: true,
+                                },
+                                {
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 725.000",
                                     highlight: true,
                                 },
                             ],
                             normal: [
-                                { label: "Regular", price: "Rp 1.000.000" },
-                                { label: "Loyalty", price: "Rp 800.000", highlight: true },
                                 {
-                                    label: "Community",
-                                    subtitle: "Min. 5 runners",
+                                    label: t.pricing.regular,
+                                    price: "Rp 1.000.000",
+                                },
+                                {
+                                    label: t.pricing.loyalty,
+                                    price: "Rp 800.000",
+                                    highlight: true,
+                                },
+                                {
+                                    label: t.pricing.community,
+                                    subtitle: t.pricing.minRunner,
                                     price: "Rp 850.000",
                                     highlight: true,
                                 },
                             ],
                         }}
                     />
+
                     <RunningCategoryDetail
                         image="/images-2/run5.jpg"
                         category="12K"
                         categoryLogo="/new/12k.png"
-                        description="Saturday 7 May 2027, 14:30 and 20:00"
+                        description={t.category.k12.description}
                         loops="1"
                         cutOff="3H"
-                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdDate={t.category.k12.earlyBirdDate}
                         earlyBirdLink="https://register.binloopultra.com/12k-early"
                         normalLink="https://register.binloopultra.com/12k-normal"
                         pricing={{
                             earlyBird: [
-                                { label: "Regular", price: "Rp 360.000" },
+                                {
+                                    label: t.pricing.regular,
+                                    price: "Rp 360.000",
+                                },
                             ],
                             normal: [
-                                { label: "Regular", price: "Rp 450.000" },
+                                {
+                                    label: t.pricing.regular,
+                                    price: "Rp 450.000",
+                                },
                             ],
                         }}
                     />
+
                     <RunningCategoryDetail
                         image="/images-2/run6.jpg"
                         category="RELAY"
                         categoryLogo="/new/relay.png"
-                        description="Saturday Afternoon, 8 May 2027, 14:30 WIB. Min 1 Female. 5 x 1 Loop"
+                        description={t.category.relay.description}
                         loops="5"
                         cutOff="10H"
-                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdDate={t.category.relay.earlyBirdDate}
                         earlyBirdLink="https://register.binloopultra.com/relay-early"
                         normalLink="https://register.binloopultra.com/relay-normal"
                         pricing={{
                             earlyBird: [
-                                { label: "Team", price: "Rp 1.500.000" },
+                                {
+                                    label: t.pricing.team,
+                                    price: "Rp 1.500.000",
+                                },
                             ],
                             normal: [
-                                { label: "Team", price: "Rp 1.800.000" },
+                                {
+                                    label: t.pricing.team,
+                                    price: "Rp 1.800.000",
+                                },
                             ],
                         }}
                         reverse

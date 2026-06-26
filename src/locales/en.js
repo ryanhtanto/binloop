@@ -12,10 +12,10 @@ const en = {
         title2: "LEGEND",
 
         desc1:
-            "Binloop Ultra is an annual ultra marathon race featuring multiple distance categories created to challenge every level of endurance.",
+            "Binloop Ultra is an annual ultra marathon featuring multiple distance categories designed to challenge runners of every endurance level.",
 
         desc2:
-            "This year, runners can take on the legendary 200K, 120K, 60K, 12K, and Relay 5×12K categories.",
+            "This year, runners can choose from the legendary 200K, 120K, 60K, 12K, Relay 5×12K, as well as the new The Xtra Miles category.",
 
         desc3Before: "The race takes place on the iconic",
         desc3Highlight: "Bintaro Loop",
@@ -23,7 +23,7 @@ const en = {
             "located in Bintaro Jaya, South Tangerang, where one complete loop covers approximately 12 kilometers.",
 
         desc4:
-            "Binloop is a well-known training ground among runners and cyclists, offering a comfortable and safe route passing through Kebayoran Square, Jombang Flyover, Fresh Market, Graha Raya, Driving Range, Permata Flyover, Bintaro XChange, and CBD Bintaro Jaya.",
+            "Binloop is one of the favorite training routes for runners and cyclists, offering a comfortable and safe course along Bintaro Jaya Boulevard, passing Jombang Flyover, Fresh Market, Graha Raya, Permata Flyover, Bintaro Xchange, and CBD Bintaro Jaya.",
 
         cards: {
             categories: "Categories",
@@ -60,20 +60,20 @@ const en = {
 
             categories: [
                 {
+                    cat: "XTRA MILE",
+                    req: "Must have previously completed a 120K road race or an equivalent trail race.",
+                },
+                {
                     cat: "200K",
-                    req: "At least 100K Road or Ultra Trail Finisher in a previous race",
+                    req: "Must have previously completed a 120K road race or an equivalent trail race.",
                 },
                 {
                     cat: "120K",
-                    req: "At least 60K Road or FM Trail Finisher in a previous race",
+                    req: "Must have previously completed a 60K road race or an equivalent trail race.",
                 },
                 {
                     cat: "60K",
-                    req: "At least FM Road Finisher in a previous race",
-                },
-                {
-                    cat: "12K",
-                    req: "At least completed a 5K race",
+                    req: "Must have previously completed a full marathon road race or an equivalent trail race.",
                 },
             ],
 

@@ -82,7 +82,7 @@ function Home() {
                                     md:text-sm
                                 "
                             >
-                                Bintaro Loop • South Tangerang
+                                KEBAYORAN SQUARE, BINTARO
                             </p>
                         </div>
                     </div>
@@ -91,9 +91,6 @@ function Home() {
                 <CountdownBanner targetDate="2027-05-07T00:00:00">
                     <div className="text-center">
                         <div className="flex flex-col gap-2">
-                            <Typography variant="h5" color="white" className="tracking-[0.25em]">
-                                KEBAYORAN SQUARE, BINTARO
-                            </Typography>
 
                             <Typography variant="tagline" color="dark" className="font-bold">
                                 REGISTER HERE
@@ -228,99 +225,189 @@ function Home() {
                     <RunningCategoryDetail
                         image="/images-2/run4.jpg"
                         category="XTRA MILE"
-                        description="
-                            Min. 14 Loops for Medal. Start Friday Night
-                        "
+                        description="Friday Night, 7 May 2027, 20:00 WIB"
                         loops="14+"
-                        categoryLogo="/new/xtra.jpeg"
+                        categoryLogo="/new/xtra.png"
                         cutOff="40H"
-                        earlyBirdPrice="Rp 1.200K"
-                        earlyBirdDate="Until 31 Dec 2026"
+                        earlyBirdDate="1-7 July 2026"
                         earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalPrice="Rp 1.500K"
                         normalLink="https://register.binloopultra.com/200k-normal"
+                        pricing={{
+                            earlyBird: [
+                                {
+                                    label: "Regular",
+                                    price: "Rp 1.250K",
+                                },
+                                {
+                                    label: "Loyalty",
+                                    price: "Rp 1.100K",
+                                    highlight: true,
+                                },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 1.100K",
+                                    highlight: true,
+                                },
+                            ],
+                            normal: [
+                                {
+                                    label: "Regular",
+                                    price: "Rp 1.500K",
+                                },
+                                {
+                                    label: "Loyalty",
+                                    price: "Rp 1.200K",
+                                    highlight: true,
+                                },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 1.250K",
+                                    highlight: true,
+                                },
+                            ],
+                        }}
                         reverse={true}
                     />
                     <RunningCategoryDetail
                         image="/images-2/run2.jpg"
                         category="200K"
-                        categoryLogo="/new/duaratus.jpeg"
-                        description="
-                            Start Friday Night
-                        "
+                        categoryLogo="/new/duaratus.png"
+                        description="Friday Night, 7 May 2027, 20:00 WIB"
                         loops="16"
                         cutOff="40H"
-                        earlyBirdPrice="Rp 1.200K"
-                        earlyBirdDate="Until 31 Dec 2026"
+                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
                         earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalPrice="Rp 1.500K"
                         normalLink="https://register.binloopultra.com/200k-normal"
-                        reverse={false}
+                        pricing={{
+                            earlyBird: [
+                                { label: "Regular", price: "Rp 1.250.000" },
+                                { label: "Loyalty", price: "Rp 1.100.000", highlight: true },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 1.100.000",
+                                    highlight: true,
+                                },
+                            ],
+                            normal: [
+                                { label: "Regular", price: "Rp 1.500.000" },
+                                { label: "Loyalty", price: "Rp 1.200.000", highlight: true },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 1.250.000",
+                                    highlight: true,
+                                },
+                            ],
+                        }}
                     />
                     <RunningCategoryDetail
                         image="/images-2/run1.jpg"
                         category="120K"
-                        categoryLogo="/new/duaratus.jpeg"
-                        description="
-                            Start Saturday Noon
-                        "
+                        categoryLogo="/new/120k.png"
+                        description="Saturday Afternoon, 8 May 2027, 14:00 WIB"
                         loops="15"
                         cutOff="22H"
-                        earlyBirdPrice="Rp 1.200K"
-                        earlyBirdDate="Until 31 Dec 2026"
-                        earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalPrice="Rp 1.500K"
-                        normalLink="https://register.binloopultra.com/200k-normal"
-                        reverse={true}
+                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdLink="https://register.binloopultra.com/120k-early"
+                        normalLink="https://register.binloopultra.com/120k-normal"
+                        pricing={{
+                            earlyBird: [
+                                { label: "Regular", price: "Rp 1.000.000" },
+                                { label: "Loyalty", price: "Rp 900.000", highlight: true },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 900.000",
+                                    highlight: true,
+                                },
+                            ],
+                            normal: [
+                                { label: "Regular", price: "Rp 1.250.000" },
+                                { label: "Loyalty", price: "Rp 1.000.000", highlight: true },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 1.050.000",
+                                    highlight: true,
+                                },
+                            ],
+                        }}
+                        reverse
                     />
                     <RunningCategoryDetail
                         image="/images-2/run3.jpg"
                         category="60K"
-                        description="
-                            Start Saturday Noon
-                        "
+                        categoryLogo="/new/60k.png"
+                        description="Saturday Afternoon, 8 May 2027, 14:00 WIB"
                         loops="5"
-                        categoryLogo="/new/duaratus.jpeg"
                         cutOff="10H"
-                        earlyBirdPrice="Rp 1.200K"
-                        earlyBirdDate="Until 31 Dec 2026"
-                        earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalPrice="Rp 1.500K"
-                        normalLink="https://register.binloopultra.com/200k-normal"
-                        reverse={false}
+                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdLink="https://register.binloopultra.com/60k-early"
+                        normalLink="https://register.binloopultra.com/60k-normal"
+                        pricing={{
+                            earlyBird: [
+                                { label: "Regular", price: "Rp 800.000" },
+                                { label: "Loyalty", price: "Rp 725.000", highlight: true },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 725.000",
+                                    highlight: true,
+                                },
+                            ],
+                            normal: [
+                                { label: "Regular", price: "Rp 1.000.000" },
+                                { label: "Loyalty", price: "Rp 800.000", highlight: true },
+                                {
+                                    label: "Community",
+                                    subtitle: "Min. 5 runners",
+                                    price: "Rp 850.000",
+                                    highlight: true,
+                                },
+                            ],
+                        }}
                     />
                     <RunningCategoryDetail
                         image="/images-2/run5.jpg"
                         category="12K"
-                        description="
-                            Start Saturday Noon/Night/Monday Morning
-                        "
+                        categoryLogo="/new/12k.png"
+                        description="Saturday 7 May 2027, 14:30 and 20:00"
                         loops="1"
-                        categoryLogo="/new/duaratus.jpeg"
-
                         cutOff="3H"
-                        earlyBirdPrice="Rp 1.200K"
-                        earlyBirdDate="Until 31 Dec 2026"
-                        earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalPrice="Rp 1.500K"
-                        normalLink="https://register.binloopultra.com/200k-normal"
-                        reverse={false}
+                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdLink="https://register.binloopultra.com/12k-early"
+                        normalLink="https://register.binloopultra.com/12k-normal"
+                        pricing={{
+                            earlyBird: [
+                                { label: "Regular", price: "Rp 360.000" },
+                            ],
+                            normal: [
+                                { label: "Regular", price: "Rp 450.000" },
+                            ],
+                        }}
                     />
                     <RunningCategoryDetail
                         image="/images-2/run6.jpg"
                         category="RELAY"
-                        description="
-                            Start Saturday Noon. Min 1 Female. 5 x 1 Loop
-                        "
+                        categoryLogo="/new/relay.png"
+                        description="Saturday Afternoon, 8 May 2027, 14:30 WIB. Min 1 Female. 5 x 1 Loop"
                         loops="5"
-                        categoryLogo="/new/duaratus.jpeg"
                         cutOff="10H"
-                        earlyBirdPrice="Rp 1.200K"
-                        earlyBirdDate="Until 31 Dec 2026"
-                        earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalPrice="Rp 1.500K"
-                        normalLink="https://register.binloopultra.com/200k-normal"
-                        reverse={true}
+                        earlyBirdDate="1-7 July 2026 (or until quota is full)"
+                        earlyBirdLink="https://register.binloopultra.com/relay-early"
+                        normalLink="https://register.binloopultra.com/relay-normal"
+                        pricing={{
+                            earlyBird: [
+                                { label: "Team", price: "Rp 1.500.000" },
+                            ],
+                            normal: [
+                                { label: "Team", price: "Rp 1.800.000" },
+                            ],
+                        }}
+                        reverse
                     />
                 </div>
             </DarkSection>

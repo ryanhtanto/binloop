@@ -4,17 +4,18 @@ function Sponsors() {
 
     const sponsors = [
         // "/sponsored/sponsored1.png",
-        "/sponsored/sponsored2.png",
-        "/sponsored/sponsored3.png",
-        "/sponsored/sponsored4.png",
         // "/sponsored/sponsored5.png",
+        "/sponsored/sponsored3.png",
+
     ];
 
 
     const supports = [
+        "/support/support3.png",
+        "/support/support2.png",
+        "/support/support4.png",
         // "/support/support1.png",
         // "/support/support2.png",
-        "/support/support3.png",
         // "/support/support4.png",
         // "/support/support5.png",
     ];
@@ -57,7 +58,7 @@ function Sponsors() {
                             group
                             h-28
                             rounded-2xl
-                            bg-white/40
+                            bg-white/80
                             border
                             border-white/10
                             backdrop-blur-sm
@@ -78,7 +79,7 @@ function Sponsors() {
                             src={logo}
                             alt="partner logo"
                             className="
-                                max-h-[5.6rem]
+                                max-h-[6.6rem]
                                 w-auto
                                 object-contain
                                 transition
@@ -174,20 +175,17 @@ function Sponsors() {
 
 
                     <div className="space-y-14">
-
-                        <LogoGrid
-                            title="Supported By"
-                            logos={sponsors}
-                            delay={100}
-                        />
-
-
                         <LogoGrid
                             title="Sponsors"
                             logos={supports}
                             delay={200}
                         />
 
+                        <LogoGrid
+                            title="Supported By"
+                            logos={sponsors}
+                            delay={100}
+                        />
                     </div>
 
                 </div>

@@ -43,7 +43,7 @@ export default function Footer() {
                                     className="text-white/70 mt-1"
                                 />
                                 <span className="text-white/70">
-                                    +62 812-9551-1408
+                                    +62 852-8455-4548
                                 </span>
                             </div>
 
@@ -95,7 +95,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="https://wa.me/6281234567890"
+                                href="https://wa.me/6285284554548"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="

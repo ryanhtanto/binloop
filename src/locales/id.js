@@ -12,10 +12,10 @@ const id = {
         title2: "BINLOOP",
 
         desc1:
-            "Binloop Ultra adalah ajang lari ultra maraton tahunan dengan berbagai kategori jarak yang dirancang untuk menantang setiap tingkat ketahanan pelari.",
+            "Binloop Ultra adalah ajang lari ultra marathon tahunan dengan berbagai kategori jarak yang dirancang untuk menantang setiap tingkat ketahanan pelari.",
 
         desc2:
-            "Tahun ini, pelari dapat memilih kategori legendaris 200K, 120K, 60K, 12K, dan Relay 5×12K.",
+            "Tahun ini, pelari dapat memilih kategori legendaris 200K, 120K, 60K, 12K, Relay 5×12K, serta kategori tambahan The Xtra Miles.",
 
         desc3Before: "Perlombaan berlangsung di rute ikonik",
         desc3Highlight: "Bintaro Loop",
@@ -23,7 +23,7 @@ const id = {
             "yang terletak di Bintaro Jaya, Tangerang Selatan, di mana satu putaran memiliki jarak sekitar 12 kilometer.",
 
         desc4:
-            "Binloop dikenal sebagai salah satu tempat latihan favorit bagi pelari dan pesepeda, dengan rute yang nyaman dan aman sepanjang Jalan Bintaro Boulevard yang melewati Kebayoran Square, Flyover Jombang, Fresh Market, Graha Raya, Driving Range, Flyover Permata, Bintaro XChange, CBD Bintaro Jaya",
+            "Binloop dikenal sebagai salah satu tempat latihan favorit bagi pelari dan pesepeda, dengan rute yang nyaman dan aman sepanjang Jalan Boulevard Bintaro Jaya yang melewati Flyover Jombang, Fresh Market, Graha Raya, Flyover Permata, Bintaro Xchange, dan CBD Bintaro Jaya.",
 
         cards: {
             categories: "Kategori",
@@ -60,20 +60,20 @@ const id = {
 
             categories: [
                 {
+                    cat: "XTRA MILE",
+                    req: "Sudah pernah menyelesaikan lomba lari 120K atau Trail yang setara.",
+                },
+                {
                     cat: "200K",
-                    req: "Minimal pernah menyelesaikan lomba 100K Road atau Ultra Trail",
+                    req: "Sudah pernah menyelesaikan lomba lari 120K atau Trail yang setara.",
                 },
                 {
                     cat: "120K",
-                    req: "Minimal pernah menyelesaikan lomba 60K Road atau Full Marathon Trail",
+                    req: "Sudah pernah menyelesaikan lomba lari 60K atau Trail yang setara.",
                 },
                 {
                     cat: "60K",
-                    req: "Minimal pernah menyelesaikan Full Marathon Road",
-                },
-                {
-                    cat: "12K",
-                    req: "Minimal pernah menyelesaikan lomba 5K",
+                    req: "Sudah pernah menyelesaikan lomba lari Full Marathon atau Trail yang setara.",
                 },
             ],
 

@@ -7,10 +7,9 @@ function RunningCategoryDetail({
     description,
     loops,
     cutOff,
-    earlyBirdPrice,
+    pricing,
     earlyBirdDate,
     earlyBirdLink,
-    normalPrice,
     normalLink,
     reverse = false,
 }) {
@@ -134,7 +133,7 @@ function RunningCategoryDetail({
                 </div>
 
                 {/* Prices */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-2xl">
                     {/* Early Bird */}
                     <a
                         href={earlyBirdLink}
@@ -143,7 +142,7 @@ function RunningCategoryDetail({
                         className="
                             group
                             rounded-2xl
-                            p-5
+                            p-6
                             bg-[#d82370]/10
                             border border-[#d82370]/40
                             shadow-[0_0_30px_rgba(216,35,112,0.25)]
@@ -153,26 +152,42 @@ function RunningCategoryDetail({
                             hover:shadow-[0_0_45px_rgba(216,35,112,0.45)]
                         "
                     >
-                        <p
-                            className="
-                                text-[#d82370]
-                                uppercase
-                                tracking-[0.2em]
-                                text-xs
-                                font-bold
-                                mb-2
-                            "
-                        >
+                        <p className="text-[#d82370] uppercase tracking-[0.2em] text-xs font-bold mb-2">
                             Early Bird
                         </p>
 
-                        <h3 className="text-white text-3xl font-black">
-                            {earlyBirdPrice}
-                        </h3>
-
-                        <p className="text-white/60 text-sm mt-2">
+                        <p className="text-white/60 text-sm mb-5">
                             {earlyBirdDate}
                         </p>
+
+                        <div className="space-y-3">
+                            {pricing.earlyBird.map((item) => (
+                                <div
+                                    key={item.label}
+                                    className="flex justify-between items-center border-b border-white/10 pb-2 last:border-none"
+                                >
+                                    <div>
+                                        <p className="text-white/70">{item.label}</p>
+
+                                        {item.subtitle && (
+                                            <p className="text-xs text-white/40">
+                                                {item.subtitle}
+                                            </p>
+                                        )}
+                                    </div>
+
+                                    <p
+                                        className={`text-xl font-bold ${
+                                            item.highlight
+                                                ? "text-[#ff8fc0]"
+                                                : "text-white"
+                                        }`}
+                                    >
+                                        {item.price}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     </a>
 
                     {/* Normal */}
@@ -183,7 +198,7 @@ function RunningCategoryDetail({
                         className="
                             group
                             rounded-2xl
-                            p-5
+                            p-6
                             bg-white/5
                             border border-white/15
                             backdrop-blur-sm
@@ -192,22 +207,38 @@ function RunningCategoryDetail({
                             hover:bg-white/10
                         "
                     >
-                        <p
-                            className="
-                                text-white/70
-                                uppercase
-                                tracking-[0.2em]
-                                text-xs
-                                font-bold
-                                mb-2
-                            "
-                        >
+                        <p className="text-white/70 uppercase tracking-[0.2em] text-xs font-bold mb-2">
                             Normal
                         </p>
 
-                        <h3 className="text-white text-3xl font-black">
-                            {normalPrice}
-                        </h3>
+                        <p className="text-white/60 text-sm mb-5">
+                            Starts 8 July 2026
+                        </p>
+
+                        <div className="space-y-3">
+                            {pricing.normal.map((item) => (
+                                <div
+                                    key={item.label}
+                                    className="flex justify-between items-center border-b border-white/10 pb-2 last:border-none"
+                                >
+                                    <div>
+                                        <p className="text-white/70">{item.label}</p>
+
+                                        {item.subtitle && (
+                                            <p className="text-xs text-white/40">
+                                                {item.subtitle}
+                                            </p>
+                                        )}
+                                    </div>
+
+                                    <p
+                                        className={`text-xl text-white font-bold`}
+                                    >
+                                        {item.price}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     </a>
                 </div>
             </div>

@@ -273,7 +273,7 @@ function Home() {
                         />
 
                         <RunningCategoryDetail
-                            image="/images-2/200k.jpeg"
+                            image="/images-2/duaratus.jpeg"
                             category="200K"
                             categoryLogo="/new/duaratus.png"
                             description={t.category.k200.description}
@@ -321,7 +321,7 @@ function Home() {
                         />
 
                         <RunningCategoryDetail
-                            image="/images-2/120k.jpeg"
+                            image="/images-2/satuduapuluh.jpeg"
                             category="120K"
                             categoryLogo="/new/120k.png"
                             description={t.category.k120.description}
@@ -370,7 +370,7 @@ function Home() {
                         />
 
                         <RunningCategoryDetail
-                            image="/images-2/60k.jpeg"
+                            image="/images-2/enampuluh.jpeg"
                             category="60K"
                             categoryLogo="/new/60k.png"
                             description={t.category.k60.description}
@@ -418,7 +418,7 @@ function Home() {
                         />
 
                         <RunningCategoryDetail
-                            image="/images-2/12k.jpeg"
+                            image="/images-2/duabelas.jpeg"
                             category="12K"
                             categoryLogo="/new/12k.png"
                             description={t.category.k12.description}

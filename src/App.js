@@ -6,6 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Participant from "./pages/participant";
+import Rules from "./pages/rules";
+import Waiver from "./pages/waiver";
+import NotFound from "./pages/notFound";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/footer";
 
@@ -37,9 +40,21 @@ function App() {
             />
 
             <Route
+              path="/rules"
+              element={<Rules />}
+            />
+
+            <Route
               path="/sponsor"
               element={<Sponsors />}
             />
+
+            <Route
+              path="/waiver"
+              element={<Waiver />}
+            />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
           
           <Footer />

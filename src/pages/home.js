@@ -325,7 +325,7 @@ function Home() {
                             category="120K"
                             categoryLogo="/new/120k.png"
                             description={t.category.k120.description}
-                            loops="15"
+                            loops="10"
                             cutOff="22H"
                             earlyBirdDate={t.category.k120.earlyBirdDate}
                             earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-120k"

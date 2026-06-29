@@ -6,6 +6,9 @@ function Sponsors() {
         // "/sponsored/sponsored1.png",
         // "/sponsored/sponsored5.png",
         "/sponsored/sponsored3.png",
+        "/sponsored/sponsored2.png",
+        "/sponsored/sponsored4.png",
+        "/sponsored/sponsored5.png",
 
     ];
 

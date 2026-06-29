@@ -220,256 +220,258 @@ function Home() {
                 </section>
             </DarkSection>
 
-            <DarkSection>
-                <div className="max-w-7xl mx-auto px-6 py-20 ">
-                    <RunningCategoryDetail
-                        image="/images-2/run4.jpg"
-                        category="XTRA MILE"
-                        categoryLogo="/new/xtra.png"
-                        description={t.category.xtra.description}
-                        loops="14+"
-                        cutOff="40H"
-                        earlyBirdDate={t.category.xtra.earlyBirdDate}
-                        earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalLink="https://register.binloopultra.com/200k-normal"
-                        pricing={{
-                            earlyBird: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.250K",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 1.100K",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 1.100K",
-                                    highlight: true,
-                                },
-                            ],
-                            normal: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.500K",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 1.200K",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 1.250K",
-                                    highlight: true,
-                                },
-                            ],
-                        }}
-                        reverse
-                    />
+            <div id="register">
+                <DarkSection>
+                    <div className="max-w-7xl mx-auto px-6 py-20 ">
+                        <RunningCategoryDetail
+                            image="/images-2/xtra.jpeg"
+                            category="XTRA MILE"
+                            categoryLogo="/new/xtra.png"
+                            description={t.category.xtra.description}
+                            loops="14+"
+                            cutOff="40H"
+                            earlyBirdDate={t.category.xtra.earlyBirdDate}
+                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-extra-miles-40h"
+                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-extra-miles-40h"
+                            pricing={{
+                                earlyBird: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.250K",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 1.100K",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 1.100K",
+                                        highlight: true,
+                                    },
+                                ],
+                                normal: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.500K",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 1.200K",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 1.250K",
+                                        highlight: true,
+                                    },
+                                ],
+                            }}
+                            reverse
+                        />
 
-                    <RunningCategoryDetail
-                        image="/images-2/run2.jpg"
-                        category="200K"
-                        categoryLogo="/new/duaratus.png"
-                        description={t.category.k200.description}
-                        loops="16"
-                        cutOff="40H"
-                        earlyBirdDate={t.category.k200.earlyBirdDate}
-                        earlyBirdLink="https://register.binloopultra.com/200k-early"
-                        normalLink="https://register.binloopultra.com/200k-normal"
-                        pricing={{
-                            earlyBird: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.250.000",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 1.100.000",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 1.100.000",
-                                    highlight: true,
-                                },
-                            ],
-                            normal: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.500.000",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 1.200.000",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 1.250.000",
-                                    highlight: true,
-                                },
-                            ],
-                        }}
-                    />
+                        <RunningCategoryDetail
+                            image="/images-2/200k.jpeg"
+                            category="200K"
+                            categoryLogo="/new/duaratus.png"
+                            description={t.category.k200.description}
+                            loops="16"
+                            cutOff="40H"
+                            earlyBirdDate={t.category.k200.earlyBirdDate}
+                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-200k"
+                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-200k"
+                            pricing={{
+                                earlyBird: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.250.000",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 1.100.000",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 1.100.000",
+                                        highlight: true,
+                                    },
+                                ],
+                                normal: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.500.000",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 1.200.000",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 1.250.000",
+                                        highlight: true,
+                                    },
+                                ],
+                            }}
+                        />
 
-                    <RunningCategoryDetail
-                        image="/images-2/run1.jpg"
-                        category="120K"
-                        categoryLogo="/new/120k.png"
-                        description={t.category.k120.description}
-                        loops="15"
-                        cutOff="22H"
-                        earlyBirdDate={t.category.k120.earlyBirdDate}
-                        earlyBirdLink="https://register.binloopultra.com/120k-early"
-                        normalLink="https://register.binloopultra.com/120k-normal"
-                        pricing={{
-                            earlyBird: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.000.000",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 900.000",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 900.000",
-                                    highlight: true,
-                                },
-                            ],
-                            normal: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.250.000",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 1.000.000",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 1.050.000",
-                                    highlight: true,
-                                },
-                            ],
-                        }}
-                        reverse
-                    />
+                        <RunningCategoryDetail
+                            image="/images-2/120k.jpeg"
+                            category="120K"
+                            categoryLogo="/new/120k.png"
+                            description={t.category.k120.description}
+                            loops="15"
+                            cutOff="22H"
+                            earlyBirdDate={t.category.k120.earlyBirdDate}
+                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-120k"
+                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-120k"
+                            pricing={{
+                                earlyBird: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.000.000",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 900.000",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 900.000",
+                                        highlight: true,
+                                    },
+                                ],
+                                normal: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.250.000",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 1.000.000",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 1.050.000",
+                                        highlight: true,
+                                    },
+                                ],
+                            }}
+                            reverse
+                        />
 
-                    <RunningCategoryDetail
-                        image="/images-2/run3.jpg"
-                        category="60K"
-                        categoryLogo="/new/60k.png"
-                        description={t.category.k60.description}
-                        loops="5"
-                        cutOff="10H"
-                        earlyBirdDate={t.category.k60.earlyBirdDate}
-                        earlyBirdLink="https://register.binloopultra.com/60k-early"
-                        normalLink="https://register.binloopultra.com/60k-normal"
-                        pricing={{
-                            earlyBird: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 800.000",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 725.000",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 725.000",
-                                    highlight: true,
-                                },
-                            ],
-                            normal: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 1.000.000",
-                                },
-                                {
-                                    label: t.pricing.loyalty,
-                                    price: "Rp 800.000",
-                                    highlight: true,
-                                },
-                                {
-                                    label: t.pricing.community,
-                                    subtitle: t.pricing.minRunner,
-                                    price: "Rp 850.000",
-                                    highlight: true,
-                                },
-                            ],
-                        }}
-                    />
+                        <RunningCategoryDetail
+                            image="/images-2/60k.jpeg"
+                            category="60K"
+                            categoryLogo="/new/60k.png"
+                            description={t.category.k60.description}
+                            loops="5"
+                            cutOff="10H"
+                            earlyBirdDate={t.category.k60.earlyBirdDate}
+                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-60k"
+                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-60k"
+                            pricing={{
+                                earlyBird: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 800.000",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 725.000",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 725.000",
+                                        highlight: true,
+                                    },
+                                ],
+                                normal: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 1.000.000",
+                                    },
+                                    {
+                                        label: t.pricing.loyalty,
+                                        price: "Rp 800.000",
+                                        highlight: true,
+                                    },
+                                    {
+                                        label: t.pricing.community,
+                                        subtitle: t.pricing.minRunner,
+                                        price: "Rp 850.000",
+                                        highlight: true,
+                                    },
+                                ],
+                            }}
+                        />
 
-                    <RunningCategoryDetail
-                        image="/images-2/run5.jpg"
-                        category="12K"
-                        categoryLogo="/new/12k.png"
-                        description={t.category.k12.description}
-                        loops="1"
-                        cutOff="3H"
-                        earlyBirdDate={t.category.k12.earlyBirdDate}
-                        earlyBirdLink="https://register.binloopultra.com/12k-early"
-                        normalLink="https://register.binloopultra.com/12k-normal"
-                        pricing={{
-                            earlyBird: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 360.000",
-                                },
-                            ],
-                            normal: [
-                                {
-                                    label: t.pricing.regular,
-                                    price: "Rp 450.000",
-                                },
-                            ],
-                        }}
-                    />
+                        <RunningCategoryDetail
+                            image="/images-2/12k.jpeg"
+                            category="12K"
+                            categoryLogo="/new/12k.png"
+                            description={t.category.k12.description}
+                            loops="1"
+                            cutOff="3H"
+                            earlyBirdDate={t.category.k12.earlyBirdDate}
+                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-12k"
+                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-12k"
+                            pricing={{
+                                earlyBird: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 360.000",
+                                    },
+                                ],
+                                normal: [
+                                    {
+                                        label: t.pricing.regular,
+                                        price: "Rp 450.000",
+                                    },
+                                ],
+                            }}
+                        />
 
-                    <RunningCategoryDetail
-                        image="/images-2/run6.jpg"
-                        category="RELAY"
-                        categoryLogo="/new/relay.png"
-                        description={t.category.relay.description}
-                        loops="5"
-                        cutOff="10H"
-                        earlyBirdDate={t.category.relay.earlyBirdDate}
-                        earlyBirdLink="https://register.binloopultra.com/relay-early"
-                        normalLink="https://register.binloopultra.com/relay-normal"
-                        pricing={{
-                            earlyBird: [
-                                {
-                                    label: t.pricing.team,
-                                    price: "Rp 1.500.000",
-                                },
-                            ],
-                            normal: [
-                                {
-                                    label: t.pricing.team,
-                                    price: "Rp 1.800.000",
-                                },
-                            ],
-                        }}
-                        reverse
-                    />
-                </div>
-            </DarkSection>
+                        <RunningCategoryDetail
+                            image="/images-2/Relay.jpeg"
+                            category="RELAY"
+                            categoryLogo="/new/relay.png"
+                            description={t.category.relay.description}
+                            loops="5"
+                            cutOff="10H"
+                            earlyBirdDate={t.category.relay.earlyBirdDate}
+                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-relay-60k"
+                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-relay-60k"
+                            pricing={{
+                                earlyBird: [
+                                    {
+                                        label: t.pricing.team,
+                                        price: "Rp 1.500.000",
+                                    },
+                                ],
+                                normal: [
+                                    {
+                                        label: t.pricing.team,
+                                        price: "Rp 1.800.000",
+                                    },
+                                ],
+                            }}
+                            reverse
+                        />
+                    </div>
+                </DarkSection>
+            </div>
             
             <DarkSection>
                 <div className="max-w-7xl mx-auto">
@@ -480,7 +482,8 @@ function Home() {
                         </span>
 
                         <h2 className="mt-4 text-5xl font-black text-white">
-                            {t.raceInfo.title}
+                            {/* {t.raceInfo.title} */}
+                            CAUSE THE WALLS START SHAKING
                         </h2>
 
                         <p className="mt-4 text-white/60 max-w-2xl mx-auto">

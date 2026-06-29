@@ -81,8 +81,12 @@ function CountdownBanner({ targetDate, children }) {
 
 
                 {/* Right Content */}
+               
                 <div className="relative bg-[#d82370] text-white flex items-center justify-center px-8 py-8 md:w-[35%]">
 
+                    <a
+    href="#register"
+>
                     {/* Diagonal Shape */}
                     <div
                         className="hidden md:block absolute left-[-40px] top-0 
@@ -90,10 +94,14 @@ function CountdownBanner({ targetDate, children }) {
                                    skew-x-[-15deg]"
                     />
 
+                     
                     <div className="relative z-10">
                         {children}
                     </div>
+                    </a>
+
                 </div>
+                
             </div>
         </div>
     );

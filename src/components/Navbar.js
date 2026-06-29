@@ -415,7 +415,7 @@ function Navbar() {
                                 {results.map((year) => (
                                     <a
                                         key={year}
-                                        href={`https://www.sportsplits.com/races/binloop-ultra${year}`}
+                                        href={`https://www.sportsplits.com/races/binloop-ultra-${year}`}
                                         className="text-white/70"
                                     >
                                         {year} Result

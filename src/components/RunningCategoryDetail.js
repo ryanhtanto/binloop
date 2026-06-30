@@ -188,6 +188,27 @@ function RunningCategoryDetail({
                                 </div>
                             ))}
                         </div>
+
+                        <div className="mt-6">
+                            <div
+                                className="
+                                    w-full
+                                    rounded-xl
+                                    bg-[#d82370]
+                                    py-3
+                                    text-center
+                                    font-bold
+                                    tracking-wide
+                                    text-white
+                                    transition-all
+                                    duration-300
+                                    group-hover:bg-[#e63782]
+                                    group-hover:shadow-[0_0_20px_rgba(216,35,112,.45)]
+                                "
+                            >
+                                Register Here →
+                            </div>
+                        </div>
                     </a>
 
                     {/* Normal */}
@@ -239,8 +260,31 @@ function RunningCategoryDetail({
                                 </div>
                             ))}
                         </div>
+
+                        <div className="mt-6">
+                            <div
+                                className="
+                                    w-full
+                                    rounded-xl
+                                    bg-[#d82370]
+                                    py-3
+                                    text-center
+                                    font-bold
+                                    tracking-wide
+                                    text-white
+                                    transition-all
+                                    duration-300
+                                    group-hover:bg-[#e63782]
+                                    group-hover:shadow-[0_0_20px_rgba(216,35,112,.45)]
+                                "
+                            >
+                                Register Here →
+                            </div>
+                        </div>
                     </a>
                 </div>
+
+                
             </div>
         </div>
     );

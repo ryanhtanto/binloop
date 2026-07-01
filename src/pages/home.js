@@ -328,7 +328,7 @@ function Home() {
                             loops="10"
                             cutOff="22H"
                             earlyBirdDate={t.category.k120.earlyBirdDate}
-                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-120k"
+                            earlyBirdLink="sold"
                             normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-120k"
                             pricing={{
                                 earlyBird: [
@@ -377,7 +377,7 @@ function Home() {
                             loops="5"
                             cutOff="10H"
                             earlyBirdDate={t.category.k60.earlyBirdDate}
-                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-60k"
+                            earlyBirdLink="sold"
                             normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-60k"
                             pricing={{
                                 earlyBird: [
@@ -425,7 +425,7 @@ function Home() {
                             loops="1"
                             cutOff="3H"
                             earlyBirdDate={t.category.k12.earlyBirdDate}
-                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-12k"
+                            earlyBirdLink="sold"
                             normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-12k"
                             pricing={{
                                 earlyBird: [
@@ -451,7 +451,7 @@ function Home() {
                             loops="5"
                             cutOff="10H"
                             earlyBirdDate={t.category.relay.earlyBirdDate}
-                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-relay-60k"
+                            earlyBirdLink="sold"
                             normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-relay-60k"
                             pricing={{
                                 earlyBird: [

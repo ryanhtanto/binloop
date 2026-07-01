@@ -137,7 +137,6 @@ const id = {
                     items: [
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari jalan raya (road running) sejauh 120 km.",
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari lintas alam (ultra trail running) di atas 42 km.",
-                        "Berusia minimum 18 tahun pada tanggal 7 Mei 2027.",
                     ],
                 },
                 {
@@ -145,7 +144,6 @@ const id = {
                     items: [
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari jalan raya (road running) sejauh 120 km.",
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari lintas alam (ultra trail running) di atas 42 km.",
-                        "Berusia minimum 18 tahun pada tanggal 7 Mei 2027.",
                     ],
                 },
                 {
@@ -153,7 +151,6 @@ const id = {
                     items: [
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari jalan raya (road running) sejauh 60 km.",
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari lintas alam (trail running) sejauh 42 km.",
-                        "Berusia minimum 18 tahun pada tanggal 8 Mei 2027.",
                     ],
                 },
                 {
@@ -161,7 +158,6 @@ const id = {
                     items: [
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari jalan raya kategori Full Marathon.",
                         "Peserta wajib telah menyelesaikan setidaknya perlombaan lari lintas alam (trail running) sejauh 21 km.",
-                        "Berusia minimum 18 tahun pada tanggal 8 Mei 2027.",
                     ],
                 },
                 {

@@ -137,7 +137,6 @@ const en = {
                     items: [
                         "Participants are required to have completed at least a 120 km road running race.",
                         "Participants are required to have completed at least an ultra trail running race over 42 km.",
-                        "Minimum 18 years of age by May 7, 2027.",
                     ],
                 },
                 {
@@ -145,7 +144,6 @@ const en = {
                     items: [
                         "Participants are required to have completed at least a 120 km road running race.",
                         "Participants are required to have completed at least an ultra trail running race over 42 km.",
-                        "Minimum 18 years of age by May 7, 2027.",
                     ],
                 },
                 {
@@ -153,7 +151,6 @@ const en = {
                     items: [
                         "Participants are required to have completed at least a 60 km road running race.",
                         "Participants are required to have completed at least a 42 km trail running race.",
-                        "Minimum 18 years of age by May 8, 2027.",
                     ],
                 },
                 {
@@ -161,7 +158,6 @@ const en = {
                     items: [
                         "Participants are required to have completed at least a Full Marathon road running race.",
                         "Participants are required to have completed at least a 21 km trail running race.",
-                        "Minimum 18 years of age by May 8, 2027.",
                     ],
                 },
                 {

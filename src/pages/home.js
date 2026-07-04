@@ -231,7 +231,7 @@ function Home() {
                             loops="14+"
                             cutOff="40H"
                             earlyBirdDate={t.category.xtra.earlyBirdDate}
-                            earlyBirdLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-xtra-miles-40h"
+                            earlyBirdLink="sold"
                             normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-xtra-miles-40h"
                             pricing={{
                                 earlyBird: [

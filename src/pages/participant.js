@@ -21,7 +21,7 @@ function Participant() {
             const sheet = workbook.Sheets["Participant List"];
 
             
-
+            console.log(sheet)
             const rawData = XLSX.utils.sheet_to_json(sheet, {
                 header: 1,
             });
@@ -42,9 +42,10 @@ function Participant() {
 
 
     const filteredParticipants = participants.filter((p) =>
-        p.name.toLowerCase().includes(search.toLowerCase())
+        p.name?.toLowerCase().includes(search.toLowerCase())
     );
 
+    console.log(filteredParticipants)
 
     return (
         <div className="min-h-screen bg-[#242021] text-white pt-32 px-6">

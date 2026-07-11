@@ -452,7 +452,7 @@ function Home() {
                             cutOff="10H"
                             earlyBirdDate={t.category.relay.earlyBirdDate}
                             earlyBirdLink="sold"
-                            normalLink="https://sportplus.myr.id/pl/binloop-ultra-120k-x-edition-2027-relay-60k"
+                            normalLink="sold"
                             pricing={{
                                 earlyBird: [
                                     {

@@ -75,7 +75,7 @@ function Participant() {
                     "
                 />
 
-                <h3
+                {/* <h3
                     className="
                         text-2xl 
                         font-black 
@@ -85,10 +85,10 @@ function Participant() {
                     "
                 >
                     {t.comingSoon}
-                </h3>
+                </h3> */}
 
                 {/* Table */}
-                {/* <div className="overflow-x-auto rounded-2xl border border-white/10">
+                <div className="overflow-x-auto rounded-2xl border border-white/10">
 
                     <table className="w-full">
 
@@ -149,7 +149,7 @@ function Participant() {
 
                     </table>
 
-                </div> */}
+                </div>
 
             </div>
 
